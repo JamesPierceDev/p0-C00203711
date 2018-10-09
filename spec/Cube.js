@@ -12,15 +12,6 @@ describe('Cube()', function () {
   });
 
   it('computes the cube of 2', function () {
-    expect(Math.pow(2, 3)).to.equal(8);
+    expect(Math.pow([1, 2, 3, 4, 5, 6], 3)).to.equal([1, 8, 27, 64, 125, 216]);
   });
-
-  it('computes the cube of 3', function () {
-    expect(Math.pow(3, 3)).to.equal(27);
-  });
-
-  it('computes the cube of 0', function () {
-    expect(Math.pow(0, 3)).to.equal(0);
-  });
-
 });
